@@ -1,0 +1,29 @@
+<div class="container mx-auto my-3 row">
+    <div class="col-lg-4 col-md-12 col-sm-12">
+        <table class="table bg-light row d-flex flex-wrap">
+            <caption>List of Department Categorized by DepartmentGroup</caption>
+            <thead class="bg-dark text-light">
+                <tr>
+                    <th scope="col" *ngFor="let group of deptGroup">{{group}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td *ngFor="let group of deptGroup">
+                    <tr *ngFor="let dept of Departmentdata">
+                        <td class="m-2 p-1" *ngIf="dept.groupName == group">
+                            <a [routerLink]="['Employees',dept.departmentId]" class="nav-link text-dark">{{dept.name}}</a>
+                        </td>
+                    </tr>
+                </td>
+            </tbody>
+        </table>
+    </div>
+<br>
+<hr>
+<br>
+    <div class="container mx-auto mt-5 text-center col-lg-4 col-md-12 col-sm-12">
+
+        <p class="display-4 text-muted">Employees By Department</p>
+        <router-outlet></router-outlet>
+    </div>
+</div>

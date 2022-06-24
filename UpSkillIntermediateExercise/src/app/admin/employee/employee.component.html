@@ -1,0 +1,60 @@
+<div class="m-0 p-0" style="height:800px;">
+    <div class="container-fluid row d-flex flex-wrap justify-content-around" style="height:800px;">
+        <div class="m-0 py-2 col-lg-3 col-sm-12 col-xm-12">
+            <h5>Filter</h5>
+            <div>
+                <p>By JobTitle</p>
+                <div style="height:200px; overflow-y:scroll ;">
+                    <ul type="none" class="" *ngFor="let job of distinctjobTitle index as i">
+                        
+                        <label> <input id="jobtitle + job" type="checkbox" value="{{job }}" (change)="filterJobTitle($event)"> {{job}}</label>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p>Organization Level</p>
+                <select name="filterOrganization" id=""  [(ngModel)]="filterOrganization">
+                    <option value="">--select--</option>
+                    <option *ngFor="let orgLevel of distinctOrganizationLevel index as i" value="{{orgLevel}}">{{orgLevel}}</option>
+                </select>
+            </div>
+            <div class="container">
+                <button class="btn btn-primary" (click)="ApplyFilter()">Apply Filter</button>
+            </div>
+        </div>
+        <span class="m-0 p-0 col-1 bg-secondary" style="width: 10px;"></span>
+        <!-- data display -->
+        <div class="col-lg-8 col-sm-12 col-xm-12">
+            <table class="table" style="overflow: scroll;">
+                <thead>
+                    <th>EmployeeId</th>
+                    <th>LoginId</th>
+                    <th>JobTitle</th>
+                    <th>Organization Level</th>
+                    <th>Vacation Hours</th>
+                    <th>Sickleave Hours</th>
+                    <th>Hire Date</th>
+                    <th>Is Salaried</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let emp of employees index as i">
+                        <td *ngIf="i<queryParam.itemPerPage">{{emp.businessEntityId}}</td>
+                        <td *ngIf="i<queryParam.itemPerPage">{{emp.loginId}}</td>
+                        <td *ngIf="i<queryParam.itemPerPage">{{emp.jobTitle}}</td>
+                        <td *ngIf="i<queryParam.itemPerPage">{{emp.organizationLevel}}</td>
+                        <td *ngIf="i<queryParam.itemPerPage">{{emp.vacationHours}}</td>
+                        <td *ngIf="i<queryParam.itemPerPage">{{emp.sickLeaveHours}}</td>
+                        <td *ngIf="i<queryParam.itemPerPage">{{emp.hireDate}}</td>
+                        <td *ngIf="i<queryParam.itemPerPage">{{emp.salariedFlag}}</td>
+                    </tr>
+                </tbody>
+                <caption>
+                    <input type="number" class="form-control-sm" [(ngModel)]="queryParam.itemPerPage">
+                    <button class="btn btn-primary m-2" [disabled]="!isPrevious" (click)="previous()">Previous</button>
+                    <button class="btn btn-primary m-2" [disabled]="!isNext" (click)="next()">Next</button>
+                </caption>
+            </table>
+        </div>
+    </div>
+    <br>
+</div>

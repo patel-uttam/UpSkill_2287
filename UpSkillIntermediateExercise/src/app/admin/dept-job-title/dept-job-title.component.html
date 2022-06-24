@@ -1,0 +1,26 @@
+<div class="container-fluid m-0 p-1">
+    <table class="table">
+        <caption></caption>
+        <thead>
+            <th>EmployeesId</th>
+            <th>JobTitle</th>
+            <th>LoginId</th>
+            <th>IsSalaried</th>
+            <th>HireDate</th>
+            <th>Vacation Hours</th>
+            <th>Sick Hours</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employees">
+                <td>{{emp.businessEntityId}}</td>
+                <td>{{emp.jobTitle}}</td>
+                <td>{{emp.loginId}}</td>
+                <td>{{emp.salariedFlag}}</td>
+                <td>{{emp.hireDate}}</td>
+                <td>{{emp.vacationHours}}</td>
+                <td>{{emp.sickLeaveHours}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

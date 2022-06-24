@@ -1,0 +1,38 @@
+<div class="m-0 p-0">
+  <!--header-->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <h5 class="navbar-brand">
+          Hello
+        </h5>
+        <div id="nav_option" class="navbar-collapse collapse justify-content-end">
+          <ul class="text-light navbar-nav" type="none">
+            <li class="nav-item">
+              <a routerLink="" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/Admin/Employee" class="nav-link">Employee</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/Admin/Department" class="nav-link">Department</a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/Login" class="nav-link">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  </header>
+
+  <!--Main-->
+  <div [@Animation]="GetTrasition()">
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- footer-->
+  <footer>
+
+  </footer>
+</div>

@@ -1,0 +1,95 @@
+<div class="m-0 p-0" style="height:800px;">
+    <div class="container-fluid row d-flex flex-wrap justify-content-around" style="height:800px;">
+        
+        
+        <div id="filter" class="container">
+            <div class="container-fluid d-flex flex-wrap justify-content-center">
+                <div class="m-1">
+                    <p>By JobTitle</p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="m-1">
+                    <p>Organization Level</p>
+                    <select name="" id="">
+                        <option value="">--Select--</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="container">
+                <table class="table">
+                    <thead>
+                        <th>EmployeeId</th>
+                        <th>LoginId</th>
+                        <th>JobTitle</th>
+                        <th>Organization Level</th>
+                        <th>Vacation Hours</th>
+                        <th>Sickleave Hours</th>
+                        <th>Hire Date</th>
+                        <th>Is Salaried</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let emp of employees index as i">
+                            <td *ngIf="i<itemperpage">{{emp.businessEntityId}}</td>
+                            <td *ngIf="i<itemperpage">{{emp.loginId}}</td>
+                            <td *ngIf="i<itemperpage">{{emp.jobTitle}}</td>
+                            <td *ngIf="i<itemperpage">{{emp.organizationLevel}}</td>
+                            <td *ngIf="i<itemperpage">{{emp.vacationHours}}</td>
+                            <td *ngIf="i<itemperpage">{{emp.sickLeaveHours}}</td>
+                            <td *ngIf="i<itemperpage">{{emp.hireDate}}</td>
+                            <td *ngIf="i<itemperpage">{{emp.salariedFlag}}</td>
+                        </tr>
+                    </tbody>
+                    <caption>
+                        <input type="number" class="form-control-sm" [(ngModel)]="itemperpage">
+                        <button class="btn btn-primary m-2" [disabled]="!isPrevious" (click)="previous()">Previous</button>
+                        <button class="btn btn-primary m-2" [disabled]="!isNext" (click)="next()">Next</button>
+                    </caption>
+                </table>
+            </div>
+        <div>
+
+
+        <!-- paging ex -->
+        <div id="paging" class="container">
+            <table class="table">
+                <thead>
+                    <th>EmployeeId</th>
+                    <th>LoginId</th>
+                    <th>JobTitle</th>
+                    <th>Organization Level</th>
+                    <th>Vacation Hours</th>
+                    <th>Sickleave Hours</th>
+                    <th>Hire Date</th>
+                    <th>Is Salaried</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let emp of employees index as i">
+                        <td *ngIf="i<itemperpage">{{emp.businessEntityId}}</td>
+                        <td *ngIf="i<itemperpage">{{emp.loginId}}</td>
+                        <td *ngIf="i<itemperpage">{{emp.jobTitle}}</td>
+                        <td *ngIf="i<itemperpage">{{emp.organizationLevel}}</td>
+                        <td *ngIf="i<itemperpage">{{emp.vacationHours}}</td>
+                        <td *ngIf="i<itemperpage">{{emp.sickLeaveHours}}</td>
+                        <td *ngIf="i<itemperpage">{{emp.hireDate}}</td>
+                        <td *ngIf="i<itemperpage">{{emp.salariedFlag}}</td>
+                    </tr>
+                </tbody>
+                <caption>
+                    <input type="number" class="form-control-sm" [(ngModel)]="itemperpage">
+                    <button class="btn btn-primary m-2" [disabled]="!isPrevious" (click)="previous()">Previous</button>
+                    <button class="btn btn-primary m-2" [disabled]="!isNext" (click)="next()">Next</button>
+                </caption>
+            </table>
+        </div>
+    </div>
+    <br>
+</div>

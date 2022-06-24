@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-4-lg col-12-sm">
+        <div class="list-group w-25">
+            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#login">Login</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#signup">Sign Up</a>
+        </div>
+    </div>
+    <div class="col-8-lg col-12-sm">
+        <div class="container mx-auto p-2 bg-light border">
+            <div class="container mx-auto bg-light rounded tab-content" style="box-shadow: 5px  black;">
+                <div id="login" class="tab-pane show" role="tabpanel">
+                    <form class="form" #f="ngForm">
+                        <label for="username">UserName</label>
+                        <input type="text" class="form-control form-control-md" name="username" ngModel>
+                        <label for="username">Password</label>
+                        <input type="password" class="form-control form-control-md" name="pass" ngModel (keyup)="CheckPassword($event)">
+                        <br><br>
+                        <button class="btn btn-dark" (click)="Login(f)">Login</button>
+                    </form>
+                </div>
+                <div id="signup" class="tab-pane show active" role="tabpanel">
+                    <form class="form" #f="ngForm">
+                        <label for="username">UserName</label>
+                        <input type="text" class="form-control form-control-md" name="username" ngModel>
+                        <label for="username">Password</label>
+                        <input type="password" class="form-control form-control-md" name="pass" ngModel (keyup)="CheckPassword($event)">
+                        <label for="username">Password</label>
+                        <input type="password" class="form-control form-control-md" name="pass" ngModel (keyup)="CheckPassword($event)">
+                        <br><br>
+                        <button class="btn btn-dark" (click)="Login(f)">Login</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
