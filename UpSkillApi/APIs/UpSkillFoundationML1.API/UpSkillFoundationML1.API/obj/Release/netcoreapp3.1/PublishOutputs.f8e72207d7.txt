@@ -1,0 +1,7 @@
+C:\Users\uttam.patel\source\repos\UpSkillFoundationML1.API\UpSkillFoundationML1.API\obj\Release\netcoreapp3.1\PubTmp\Out\UpSkillFoundationML1.API.exe
+C:\Users\uttam.patel\source\repos\UpSkillFoundationML1.API\UpSkillFoundationML1.API\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+C:\Users\uttam.patel\source\repos\UpSkillFoundationML1.API\UpSkillFoundationML1.API\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+C:\Users\uttam.patel\source\repos\UpSkillFoundationML1.API\UpSkillFoundationML1.API\obj\Release\netcoreapp3.1\PubTmp\Out\UpSkillFoundationML1.API.dll
+C:\Users\uttam.patel\source\repos\UpSkillFoundationML1.API\UpSkillFoundationML1.API\obj\Release\netcoreapp3.1\PubTmp\Out\UpSkillFoundationML1.API.deps.json
+C:\Users\uttam.patel\source\repos\UpSkillFoundationML1.API\UpSkillFoundationML1.API\obj\Release\netcoreapp3.1\PubTmp\Out\UpSkillFoundationML1.API.runtimeconfig.json
+C:\Users\uttam.patel\source\repos\UpSkillFoundationML1.API\UpSkillFoundationML1.API\obj\Release\netcoreapp3.1\PubTmp\Out\UpSkillFoundationML1.API.pdb

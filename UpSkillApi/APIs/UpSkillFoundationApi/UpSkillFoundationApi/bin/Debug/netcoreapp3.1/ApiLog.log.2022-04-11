@@ -1,0 +1,31 @@
+2022-04-11 18:05:41,053  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
+ 2022-04-11 18:05:41,233  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
+ 2022-04-11 18:05:41,237  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-04-11 18:05:41,240  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-04-11 18:05:41,243  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\uttam.patel\source\repos\UpSkillFoundationApi\UpSkillFoundationApi
+ 2022-04-11 18:06:29,363 ERROR UpSkillFoundationApi.FirstMiddleware.Invoke [33] - MESSAGE: FirstMiddleWare 33 line
+ 2022-04-11 18:06:29,823 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.? [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at UpSkillFoundationApi.CustomException.GlobalException.HandleExceptionMessageAsync(HttpContext context, Exception e) in C:\Users\uttam.patel\source\repos\UpSkillFoundationApi\UpSkillFoundationApi\CustomException\GlobalException.cs:line 37
+   at UpSkillFoundationApi.CustomException.GlobalException.Invoke(HttpContext httpContext) in C:\Users\uttam.patel\source\repos\UpSkillFoundationApi\UpSkillFoundationApi\CustomException\GlobalException.cs:line 30
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-04-11 18:06:29,829  WARN Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.? [?] - MESSAGE: The response has already started, the error page middleware will not be executed.
+ 2022-04-11 18:06:29,846 ERROR Microsoft.AspNetCore.Server.Kestrel.? [?] - MESSAGE: Connection id "0HMGRMV530H8V", Request id "0HMGRMV530H8V:00000001": An unhandled exception was thrown by the application.
+ System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at UpSkillFoundationApi.CustomException.GlobalException.HandleExceptionMessageAsync(HttpContext context, Exception e) in C:\Users\uttam.patel\source\repos\UpSkillFoundationApi\UpSkillFoundationApi\CustomException\GlobalException.cs:line 37
+   at UpSkillFoundationApi.CustomException.GlobalException.Invoke(HttpContext httpContext) in C:\Users\uttam.patel\source\repos\UpSkillFoundationApi\UpSkillFoundationApi\CustomException\GlobalException.cs:line 30
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
