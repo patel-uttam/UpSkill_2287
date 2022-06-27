@@ -56,9 +56,8 @@ export class EmployeeServiceService {
   {
     return this.http.get<Employee[]>("https://localhost:5001/api/Employees/EmpByDept/"+Deptid).pipe
     (
-      map((res:Employee[]) => {
+      tap((res:any)=>{
         res=[];
-        return res;
       })
     )
     

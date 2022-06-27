@@ -124,7 +124,7 @@ namespace UpSkillFoundationApi.Controllers
         [HttpPost]
         [Route("login")]
 
-        public async Task<IActionResult> userLogin([FromBody] Login login)
+        public async Task<IActionResult> userLogin([FromBody] LoginCredential login)
         {
             var user = await userManager.FindByNameAsync(login.UserName);
 

@@ -9,6 +9,6 @@ namespace UpSkillFoundationApi.Repository
 {
     public interface IAuthentication
     {
-        public Task<IActionResult> LoggingAdmin(Login login);
+        public Task<IActionResult> LoggingAdmin(LoginCredential login);
     }
 }

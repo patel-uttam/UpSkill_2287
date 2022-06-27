@@ -9,7 +9,7 @@ namespace UpSkillFoundationApi.Repository
 {
     public class Authentication : IAuthentication
     {
-        public Task<IActionResult> LoggingAdmin(Login login)
+        public Task<IActionResult> LoggingAdmin(LoginCredential login)
         {
             throw new NotImplementedException();
         }

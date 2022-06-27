@@ -4,6 +4,7 @@ import { Employee } from 'src/app/Models/Employee';
 import { EmployeeServiceService } from 'src/app/Services/employee-service.service';
 import { ToastrService } from 'ngx-toastr';
 import { query, style, transition, trigger } from '@angular/animations';
+import { tap } from 'rxjs';
 @Component({
   selector: 'app-dept-job-title',
   templateUrl: './dept-job-title.component.html',
@@ -19,7 +20,7 @@ export class DeptJobTitleComponent implements OnInit ,OnChanges {
   }
 
   ngOnInit(): void {
-    this.router.params.subscribe((x)=>{this.departmentId = x['id'], console.log(x),this.GetEmployeeByDept(4)
+    this.router.params.subscribe((x)=>{this.departmentId = x['id'], console.log(x),this.GetEmployeeByDept(this.departmentId)
   });
   }
 
@@ -34,10 +35,11 @@ export class DeptJobTitleComponent implements OnInit ,OnChanges {
     this.employeeservice.GetEmployeesByDepartment(deptid).subscribe
     (
       response => {
-        if(response as Employee[] && response.length>0)
+        if(response)
         {
           this.employees=[];
           this.employees = response as Employee[];
+          console.log("sub",response);
         }
         else
         {
@@ -47,7 +49,7 @@ export class DeptJobTitleComponent implements OnInit ,OnChanges {
       error => {
         if(error.message.length > 0)
         {
-          this.tstr.error(error.message);
+          this.tstr.error("Somthing is wrong , couldn't load data");
         }
       },
       () => {

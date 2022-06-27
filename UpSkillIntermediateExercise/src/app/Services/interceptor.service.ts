@@ -19,14 +19,25 @@ export class InterceptorService implements HttpInterceptor {
     request;
     console.log(request.url);
     return next.handle(request).pipe(
-      tap((res)=>{
-        console.log("res" , res);
-      }),
       catchError(
         (err,caught)=>{
-          this.globalHandler.handleError(err);
-          this.router.navigate(['error']);
-          return EMPTY;
+          // console.log()
+          if(err["status"]==500)
+          {
+            
+            debugger;
+            this.router.navigate(['error']);
+            this.globalHandler.handleError(err);
+            return EMPTY;
+          }
+          else if(err["status"]==401)
+          {
+            return next.handle(request);
+          } 
+          else
+          {
+            return EMPTY;
+          }
         }
       )
     )

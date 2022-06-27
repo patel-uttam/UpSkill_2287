@@ -42,6 +42,10 @@ export class EmployeeComponent implements OnInit {
         {
           this.employees.push(R as Employee);
         }
+      },
+      (error:any)=>{
+        this.employees=[];
+        
       }
     )
     console.log("JobTitle" , this.distinctjobTitle);

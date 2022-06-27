@@ -17,7 +17,7 @@ export class AppComponent {
 
   GetTrasition()
   {
-    console.log(this.route.getContext('primary')?.route?.snapshot.data?.['AnimationTrigger']);
+    // console.log(this.route.getContext('primary')?.route?.snapshot.data?.['AnimationTrigger']);
     return this.route.getContext('primary')?.route?.snapshot.data?.['AnimationTrigger'];
   }
 

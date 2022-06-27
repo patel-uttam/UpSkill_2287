@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HuaPw8k6CPz/mBPbzhcYtvkfkgA32kOIbWg3T2vmb7629yh3BGy+Iykg9n0itOTMgPTkFbSqC791+8QdC12nhg==",
+  "dgSpecHash": "rsS21RK4cVXK+V0jj+8JsVqe8Y3AuhdXgaI9A0PH68Y7Rnuc/SYf4nB2wjaG1AW9bu4Qn62MFuWCT7hhH0ifdw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\uttam.patel\\source\\repos\\UpSkillFoundationApi\\UpSkillFoundationApi\\UpSkillFoundationApi.csproj",
+  "projectFilePath": "D:\\UpSkill\\UpSkill_2287\\UpSkillApi\\APIs\\UpSkillFoundationApi\\UpSkillFoundationApi\\UpSkillFoundationApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\uttam.patel\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\uttam.patel\\.nuget\\packages\\log4net\\2.0.13\\log4net.2.0.13.nupkg.sha512",

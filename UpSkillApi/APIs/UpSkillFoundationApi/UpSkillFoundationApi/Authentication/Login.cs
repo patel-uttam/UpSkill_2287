@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 namespace UpSkillFoundationApi.Models
 {
-    public class Login
+    public class LoginCredential
     {
         [Required(ErrorMessage ="Username required")]
         [MinLength(5)]

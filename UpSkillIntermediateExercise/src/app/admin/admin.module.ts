@@ -5,11 +5,16 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { EmployeeComponent } from './employee/employee.component';
 import { DepartmentComponent } from './department/department.component';
 import { DeptJobTitleComponent } from './dept-job-title/dept-job-title.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
+
 @NgModule({
   declarations: [
     EmployeeComponent,
     DepartmentComponent,
-    DeptJobTitleComponent
+    DeptJobTitleComponent,
+    AdminComponent,
+    AdminHomeComponent
   ],
   imports: [
     CommonModule,

@@ -1,311 +1,429 @@
-2022-04-19 11:58:24,262  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
- 2022-04-19 11:58:24,486  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
- 2022-04-19 11:58:24,560  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
- 2022-04-19 11:58:24,623  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
- 2022-04-19 11:58:24,629  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\uttam.patel\source\repos\UpSkillFoundationApi\UpSkillFoundationApi
- 2022-04-19 11:59:44,899  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: The property 'ShiftId' on entity type 'Shift' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
- 2022-04-19 12:01:37,086  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'UpSkillFoundationApi.Models.Response.EmployeeResponse`1[[System.Collections.Generic.List`1[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
- System.InvalidOperationException: UpSkillFoundationApi.Models.Response.EmployeeResponse`1[System.Collections.Generic.List`1[UpSkillFoundationApi.Models.Employee]] cannot be serialized because it does not have a parameterless constructor.
-   at System.Xml.Serialization.TypeDesc.CheckSupported()
-   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
-   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
-   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
-   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
-   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
-   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
-2022-04-19 12:01:37,096  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'UpSkillFoundationApi.Models.Response.EmployeeResponse`1[[System.Collections.Generic.List`1[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
- System.InvalidOperationException: UpSkillFoundationApi.Models.Response.EmployeeResponse`1[System.Collections.Generic.List`1[UpSkillFoundationApi.Models.Employee]] cannot be serialized because it does not have a parameterless constructor.
-   at System.Xml.Serialization.TypeDesc.CheckSupported()
-   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
-   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
-   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
-   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
-   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
-   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
-2022-04-19 12:01:37,104  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'UpSkillFoundationApi.Models.Response.EmployeeResponse`1[[System.Collections.Generic.List`1[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
- System.InvalidOperationException: UpSkillFoundationApi.Models.Response.EmployeeResponse`1[System.Collections.Generic.List`1[UpSkillFoundationApi.Models.Employee]] cannot be serialized because it does not have a parameterless constructor.
-   at System.Xml.Serialization.TypeDesc.CheckSupported()
-   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
-   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
-   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
-   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
-   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
-   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
-2022-04-19 12:01:37,109  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'UpSkillFoundationApi.Models.Response.EmployeeResponse`1[[System.Collections.Generic.List`1[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
- System.InvalidOperationException: UpSkillFoundationApi.Models.Response.EmployeeResponse`1[System.Collections.Generic.List`1[UpSkillFoundationApi.Models.Employee]] cannot be serialized because it does not have a parameterless constructor.
-   at System.Xml.Serialization.TypeDesc.CheckSupported()
-   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
-   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
-   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
-   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
-   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
-   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
-2022-04-19 12:01:37,116  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'UpSkillFoundationApi.Models.Response.EmployeeResponse`1[[System.Collections.Generic.List`1[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
- System.InvalidOperationException: UpSkillFoundationApi.Models.Response.EmployeeResponse`1[System.Collections.Generic.List`1[UpSkillFoundationApi.Models.Employee]] cannot be serialized because it does not have a parameterless constructor.
-   at System.Xml.Serialization.TypeDesc.CheckSupported()
-   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
-   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
-   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
-   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
-   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
-   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
-2022-04-19 13:14:27,873  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
- 2022-04-19 13:14:27,971  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
- 2022-04-19 13:14:27,977  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
- 2022-04-19 13:14:27,980  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
- 2022-04-19 13:14:27,982  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\uttam.patel\source\repos\UpSkillFoundationApi\UpSkillFoundationApi
- 2022-04-19 13:14:39,655  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: The property 'ShiftId' on entity type 'Shift' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
- 2022-04-19 13:14:40,467 ERROR Microsoft.EntityFrameworkCore.Database.Connection.? [?] - MESSAGE: An error occurred using the connection to database 'AdventureWorks2019' on server 'PC0453\MSSQL2019'.
- 2022-04-19 13:14:40,509 ERROR Microsoft.EntityFrameworkCore.Query.? [?] - MESSAGE: An exception occurred while iterating over the results of a query for context type 'UpSkillFoundationApi.Models.AdventureWorks2019Context'.
-System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseSqlServer' call.
- ---> Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)
- ---> System.ComponentModel.Win32Exception (233): No process is on the other end of the pipe.
-   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
-   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
-   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
-   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
-   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
-   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
-   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
-   at Microsoft.Data.SqlClient.SqlConnection.Open()
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
-   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
-ClientConnectionId:1beb4490-6dd5-450d-8cd9-7e207fe78711
-Error Number:233,State:0,Class:20
+2022-06-27 10:25:33,176  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-06-27 10:25:33,405  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-06-27 10:25:33,385  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.? [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2022-06-27 10:25:33,413  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: D:\UpSkill\UpSkill_2287\UpSkillApi\APIs\UpSkillFoundationApi\UpSkillFoundationApi
+ 2022-06-27 10:36:04,898  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: The property 'ShiftId' on entity type 'Shift' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+ 2022-06-27 10:40:18,858  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
    --- End of inner exception stack trace ---
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
-   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
- System.InvalidOperationException: An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseSqlServer' call.
- ---> Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)
- ---> System.ComponentModel.Win32Exception (233): No process is on the other end of the pipe.
-   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
-   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
-   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
-   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
-   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
-   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
-   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
-   at Microsoft.Data.SqlClient.SqlConnection.Open()
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
-   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
-ClientConnectionId:1beb4490-6dd5-450d-8cd9-7e207fe78711
-Error Number:233,State:0,Class:20
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
    --- End of inner exception stack trace ---
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
-   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
-2022-04-19 13:14:41,083 ERROR UpSkillFoundationApi.CustomException.GlobalException.HandleExceptionMessageAsync [45] - MESSAGE: {"errorMessage":"An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseSqlServer' call.","statusCode":500,"link":"/api/employees"}
- 2022-04-19 13:15:15,118 ERROR Microsoft.EntityFrameworkCore.Database.Connection.? [?] - MESSAGE: An error occurred using the connection to database 'AdventureWorks2019' on server 'PC0453\MSSQL2019'.
- 2022-04-19 13:15:15,134 ERROR Microsoft.EntityFrameworkCore.Query.? [?] - MESSAGE: An exception occurred while iterating over the results of a query for context type 'UpSkillFoundationApi.Models.AdventureWorks2019Context'.
-Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user ''.
-   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
-   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
-   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
-   at Microsoft.Data.SqlClient.SqlConnection.Open()
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
-   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
-   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
-ClientConnectionId:45e37131-0f2f-4024-91e3-75e7dcfeb432
-Error Number:18456,State:1,Class:14
- Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user ''.
-   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
-   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
-   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
-   at Microsoft.Data.SqlClient.SqlConnection.Open()
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
-   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
-   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
-ClientConnectionId:45e37131-0f2f-4024-91e3-75e7dcfeb432
-Error Number:18456,State:1,Class:14
-2022-04-19 13:15:15,538 ERROR UpSkillFoundationApi.CustomException.GlobalException.HandleExceptionMessageAsync [45] - MESSAGE: {"errorMessage":"Login failed for user ''.","statusCode":500,"link":"/api/Employees"}
- 2022-04-19 13:15:23,134 ERROR Microsoft.EntityFrameworkCore.Database.Connection.? [?] - MESSAGE: An error occurred using the connection to database 'AdventureWorks2019' on server 'PC0453\MSSQL2019'.
- 2022-04-19 13:15:23,150 ERROR Microsoft.EntityFrameworkCore.Query.? [?] - MESSAGE: An exception occurred while iterating over the results of a query for context type 'UpSkillFoundationApi.Models.AdventureWorks2019Context'.
-Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user ''.
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
-   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
-   at Microsoft.Data.SqlClient.SqlConnection.Open()
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
-   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
-   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
-ClientConnectionId:45e37131-0f2f-4024-91e3-75e7dcfeb432
-Error Number:18456,State:1,Class:14
- Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user ''.
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
-   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
-   at Microsoft.Data.SqlClient.SqlConnection.Open()
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
-   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
-   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.Enumerator.MoveNext()
-ClientConnectionId:45e37131-0f2f-4024-91e3-75e7dcfeb432
-Error Number:18456,State:1,Class:14
-2022-04-19 13:16:12,115  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
- 2022-04-19 13:16:12,214  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
- 2022-04-19 13:16:12,218  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
- 2022-04-19 13:16:12,220  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
- 2022-04-19 13:16:12,222  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\uttam.patel\source\repos\UpSkillFoundationApi\UpSkillFoundationApi
- 2022-04-19 13:16:20,633  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: The property 'ShiftId' on entity type 'Shift' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
- 2022-04-19 13:24:44,161  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
- 2022-04-19 13:24:44,579  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
- 2022-04-19 13:24:44,597  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
- 2022-04-19 13:24:44,607  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
- 2022-04-19 13:24:44,615  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\uttam.patel\source\repos\UpSkillFoundationApi\UpSkillFoundationApi
- 2022-04-19 13:25:25,177  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: The property 'ShiftId' on entity type 'Shift' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
- 2022-04-19 13:29:20,346  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: https://localhost:5001
- 2022-04-19 13:29:20,575  INFO Microsoft.Hosting.Lifetime.MoveNext [0] - MESSAGE: Now listening on: http://localhost:5000
- 2022-04-19 13:29:20,586  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
- 2022-04-19 13:29:20,589  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
- 2022-04-19 13:29:20,592  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\uttam.patel\source\repos\UpSkillFoundationApi\UpSkillFoundationApi
- 2022-04-19 13:36:01,552  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
- 2022-04-19 13:36:01,668  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
- 2022-04-19 13:36:01,671  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: C:\Users\uttam.patel\source\repos\UpSkillFoundationApi\UpSkillFoundationApi
- 2022-04-19 13:36:24,601  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: The property 'ShiftId' on entity type 'Shift' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
- 2022-04-19 13:36:26,310  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'UpSkillFoundationApi.Models.Response.EmployeeResponse`1[[System.Collections.Generic.List`1[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
- System.InvalidOperationException: UpSkillFoundationApi.Models.Response.EmployeeResponse`1[System.Collections.Generic.List`1[UpSkillFoundationApi.Models.Employee]] cannot be serialized because it does not have a parameterless constructor.
-   at System.Xml.Serialization.TypeDesc.CheckSupported()
-   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
-   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
    at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
    at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
    at System.Xml.Serialization.XmlSerializer..ctor(Type type)
    at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
-2022-04-19 13:36:26,318  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'UpSkillFoundationApi.Models.Response.EmployeeResponse`1[[System.Collections.Generic.List`1[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
- System.InvalidOperationException: UpSkillFoundationApi.Models.Response.EmployeeResponse`1[System.Collections.Generic.List`1[UpSkillFoundationApi.Models.Employee]] cannot be serialized because it does not have a parameterless constructor.
-   at System.Xml.Serialization.TypeDesc.CheckSupported()
-   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
-   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
+2022-06-27 10:40:18,874  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
    at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
    at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
    at System.Xml.Serialization.XmlSerializer..ctor(Type type)
    at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
-2022-04-19 13:36:26,324  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'UpSkillFoundationApi.Models.Response.EmployeeResponse`1[[System.Collections.Generic.List`1[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
- System.InvalidOperationException: UpSkillFoundationApi.Models.Response.EmployeeResponse`1[System.Collections.Generic.List`1[UpSkillFoundationApi.Models.Employee]] cannot be serialized because it does not have a parameterless constructor.
-   at System.Xml.Serialization.TypeDesc.CheckSupported()
-   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
-   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
+2022-06-27 10:40:18,884  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
    at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
    at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
    at System.Xml.Serialization.XmlSerializer..ctor(Type type)
    at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
-2022-04-19 13:36:26,330  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'UpSkillFoundationApi.Models.Response.EmployeeResponse`1[[System.Collections.Generic.List`1[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
- System.InvalidOperationException: UpSkillFoundationApi.Models.Response.EmployeeResponse`1[System.Collections.Generic.List`1[UpSkillFoundationApi.Models.Employee]] cannot be serialized because it does not have a parameterless constructor.
-   at System.Xml.Serialization.TypeDesc.CheckSupported()
-   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
-   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
+2022-06-27 10:40:18,897  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
    at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
    at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
    at System.Xml.Serialization.XmlSerializer..ctor(Type type)
    at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
-2022-04-19 13:36:26,335  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'UpSkillFoundationApi.Models.Response.EmployeeResponse`1[[System.Collections.Generic.List`1[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
- System.InvalidOperationException: UpSkillFoundationApi.Models.Response.EmployeeResponse`1[System.Collections.Generic.List`1[UpSkillFoundationApi.Models.Employee]] cannot be serialized because it does not have a parameterless constructor.
-   at System.Xml.Serialization.TypeDesc.CheckSupported()
-   at System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
-   at System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
+2022-06-27 10:40:18,905  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
    at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
    at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
    at System.Xml.Serialization.XmlSerializer..ctor(Type type)
    at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-06-27 10:43:25,101  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-06-27 10:43:25,113  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-06-27 10:43:25,125  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-06-27 10:43:25,134  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-06-27 10:43:25,145  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-06-27 10:50:32,367  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-06-27 10:50:32,387  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-06-27 10:50:32,399  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-06-27 10:50:32,412  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-06-27 10:50:32,425  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-06-27 10:50:32,441  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-06-27 10:50:32,455  WARN Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.? [?] - MESSAGE: An error occurred while trying to create an XmlSerializer for the type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UpSkillFoundationApi.Models.Employee, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+ System.InvalidOperationException: There was an error reflecting type 'Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2[UpSkillFoundationApi.Models.Employee,UpSkillFoundationApi.Models.Employee]'.
+ ---> System.InvalidOperationException: There was an error reflecting type 'UpSkillFoundationApi.Models.Employee'.
+ ---> System.InvalidOperationException: Cannot serialize member 'UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories' of type 'System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details.
+ ---> System.NotSupportedException: Cannot serialize member UpSkillFoundationApi.Models.Employee.EmployeeDepartmentHistories of type System.Collections.Generic.ICollection`1[[UpSkillFoundationApi.Models.EmployeeDepartmentHistory, UpSkillFoundationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.CreateArrayElementsFromAttributes(ArrayMapping arrayMapping, XmlArrayItemAttributes attributes, Type arrayElementType, String arrayElementNs, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportArrayLikeMapping(ArrayModel model, String ns, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   --- End of inner exception stack trace ---
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.CreateSerializer(Type type)
+2022-06-27 12:33:36,441  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-06-27 12:33:36,575  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-06-27 12:33:36,583  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: D:\UpSkill\UpSkill_2287\UpSkillApi\APIs\UpSkillFoundationApi\UpSkillFoundationApi
+ 2022-06-27 12:33:36,594  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.? [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2022-06-27 12:48:06,130  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: The property 'ShiftId' on entity type 'Shift' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+ 2022-06-27 12:58:31,675  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-06-27 12:58:31,933  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.? [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2022-06-27 12:58:32,069  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-06-27 12:58:32,092  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: D:\UpSkill\UpSkill_2287\UpSkillApi\APIs\UpSkillFoundationApi\UpSkillFoundationApi
+ 2022-06-27 12:58:52,999  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: The property 'ShiftId' on entity type 'Shift' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+ 2022-06-27 15:31:10,085  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-06-27 15:31:10,241  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-06-27 15:31:10,245  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: D:\UpSkill\UpSkill_2287\UpSkillApi\APIs\UpSkillFoundationApi\UpSkillFoundationApi
+ 2022-06-27 15:31:10,267  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.? [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2022-06-27 16:04:21,660  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: The property 'ShiftId' on entity type 'Shift' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+ 

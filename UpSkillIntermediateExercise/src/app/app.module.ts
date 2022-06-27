@@ -19,6 +19,10 @@ import  { GlobalHandlerServiceService } from './Services/global-handler-service.
 import  { InterceptorService } from './Services/interceptor.service';
 import { GlobalErrorComponent } from './global-error/global-error.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { EmployeeModule } from './employee/employee.module';
+import { EmployeeRoutingModule } from './employee/employee-routing.module';
+import { DepartmentModule } from './department/department.module';
+import { DepartmentRoutingModule } from './department/department-routing.module';
 
 
 @NgModule({
@@ -36,6 +40,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HttpClientModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    EmployeeModule,
+    EmployeeRoutingModule,
+    DepartmentModule,
+    DepartmentRoutingModule,
     AdminModule,
     AdminRoutingModule,
     AppRoutingModule,
