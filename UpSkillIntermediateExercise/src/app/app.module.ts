@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +15,10 @@ import { ProfileComponent } from './profile/profile.component'
 import { AdminModule } from './admin/admin.module';
 import { AdminRoutingModule } from './admin/admin-routing.module';
 import { LoginComponent } from './login/login.component';
+import  { GlobalHandlerServiceService } from './Services/global-handler-service.service';
+import  { InterceptorService } from './Services/interceptor.service';
+import { GlobalErrorComponent } from './global-error/global-error.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -22,7 +26,9 @@ import { LoginComponent } from './login/login.component';
     AppComponent,
     HomeComponent,
     ProfileComponent,
-    LoginComponent
+    LoginComponent,
+    GlobalErrorComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,7 @@ import { LoginComponent } from './login/login.component';
     AdminRoutingModule,
     AppRoutingModule,
   ],
-  providers: [EmployeeServiceService,DepartmentServiceService],
+  providers: [EmployeeServiceService,DepartmentServiceService,{provide:ErrorHandler,useClass:GlobalHandlerServiceService},{provide:HTTP_INTERCEPTORS,useClass:InterceptorService,multi:true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
