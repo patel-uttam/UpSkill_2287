@@ -93,7 +93,7 @@ namespace UpSkillFoundationApi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "UpSkillSwagger v1"); });
             }
-            //app.UseExceptionHandler(c=> {c.use });
+            app.UseExceptionHandler();
             app.UseCors("EnableCORS");
             app.UseHttpsRedirection();
             app.UseRouting();

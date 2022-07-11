@@ -41,22 +41,23 @@ namespace UpSkillFoundationApi.Repository
             }
         }
 
-        public IEnumerable<Employee> GetFilterEmployees(List<string> jobname, string organization, string vacationHless, string vacationHgreater, string sicknessHless, string sicknessHgreater)
+        public IEnumerable<Employee> GetFilterEmployees(List<string> jobname, string organization, string vacationHless, string vacationHgreater)
         {
             List<Employee> FinalresultedEmployee = new List<Employee>();
 
             try
             {
+                vacationHless = vacationHless == null ? "" : vacationHless;
                 if (jobname.Count() <= 0)
                 {
-                    IEnumerable<Employee> resultedEmployee = context.Employees.FromSqlRaw("EmployeeFilter {0},{1}", null,organization );
+                    IEnumerable<Employee> resultedEmployee = context.Employees.FromSqlRaw("EmployeeFilter {0},{1},{2},{3}", null,organization,vacationHless,vacationHgreater);
                     FinalresultedEmployee.AddRange(resultedEmployee.ToList());
                 }
                 else
                 {
                     foreach (var jt in jobname)
                     {
-                        IEnumerable<Employee> resultedEmployee = context.Employees.FromSqlRaw("EmployeeFilter {0},{1}", jt, organization);
+                        IEnumerable<Employee> resultedEmployee = context.Employees.FromSqlRaw("EmployeeFilter {0},{1},{2},{3}", jt, organization,vacationHless,vacationHgreater);
                         FinalresultedEmployee.AddRange(resultedEmployee.ToList());
                     }
                 }

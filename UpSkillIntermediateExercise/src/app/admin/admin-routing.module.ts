@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuardGuard } from '../Services/auth-guard.guard';
 import { DepartmentResolverService } from '../Services/department-resolver.service';
+import { Guard1Guard } from '../Services/guard1.guard';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminComponent } from './admin/admin.component';
 import { DepartmentComponent } from './department/department.component';
@@ -13,10 +14,12 @@ const routes: Routes = [
     [
       {path:'Admin',component:AdminHomeComponent,canActivate:[AuthGuardGuard]},
       {path:'Admin/Employee',component:EmployeeComponent,data:{AnimationTrigger:"AdminEmployee"},canActivate:[AuthGuardGuard]},
-      {path:'Admin/Department',component:DepartmentComponent,resolve:{department:DepartmentResolverService},data:{AnimationTrigger:"AdminDepartment"},canActivate:[AuthGuardGuard],canActivateChild:[AuthGuardGuard],children:
+      {path:'Admin/Department',component:DepartmentComponent,resolve:{department:DepartmentResolverService},canActivate:[AuthGuardGuard],canActivateChild:[Guard1Guard],
+        children:
         [
-          {path:'Employees/:id',component:DeptJobTitleComponent,}
-        ]}
+          {path:'Employees/:id',component:DeptJobTitleComponent}
+        ]
+      },
     ]
   }
   ,

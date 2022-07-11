@@ -11,7 +11,7 @@
                 <td *ngFor="let group of deptGroup">
                     <tr *ngFor="let dept of Departmentdata">
                         <td class="m-2 p-1" *ngIf="dept.groupName == group">
-                            <a [routerLink]="['Employees',dept.departmentId]" class="nav-link text-dark">{{dept.name}}</a>
+                            <a routerLink = "Employees/{{dept.departmentId}}" class="text-dark">{{dept.name}}</a>
                         </td>
                     </tr>
                 </td>

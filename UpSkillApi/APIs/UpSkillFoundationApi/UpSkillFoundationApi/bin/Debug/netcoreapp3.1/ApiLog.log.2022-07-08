@@ -1,0 +1,21 @@
+2022-07-08 10:02:16,327  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-07-08 10:02:16,506  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.? [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2022-07-08 10:02:16,540  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-07-08 10:02:16,550  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: D:\UpSkill\UpSkill_2287\UpSkillApi\APIs\UpSkillFoundationApi\UpSkillFoundationApi
+ 2022-07-08 10:13:27,642  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: The property 'ShiftId' on entity type 'Shift' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+ 2022-07-08 10:30:56,551  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-07-08 10:30:56,683  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-07-08 10:30:56,686  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: D:\UpSkill\UpSkill_2287\UpSkillApi\APIs\UpSkillFoundationApi\UpSkillFoundationApi
+ 2022-07-08 10:30:56,709  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.? [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2022-07-08 10:32:39,664  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-07-08 10:32:39,831  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-07-08 10:32:39,835  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: D:\UpSkill\UpSkill_2287\UpSkillApi\APIs\UpSkillFoundationApi\UpSkillFoundationApi
+ 2022-07-08 10:32:39,861  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.? [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2022-07-08 10:33:59,001  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: The property 'ShiftId' on entity type 'Shift' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values.
+ 2022-07-08 11:39:49,260  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2022-07-08 11:39:49,389  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2022-07-08 11:39:49,394  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Content root path: D:\UpSkill\UpSkill_2287\UpSkillApi\APIs\UpSkillFoundationApi\UpSkillFoundationApi
+ 2022-07-08 11:39:49,401  WARN Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.? [?] - MESSAGE: Failed to determine the https port for redirect.
+ 2022-07-08 11:40:01,331  WARN Microsoft.AspNetCore.Identity.UserManager.MoveNext [0] - MESSAGE: Invalid password for user.
+ 2022-07-08 11:42:36,597  WARN Microsoft.AspNetCore.Identity.UserManager.MoveNext [0] - MESSAGE: Invalid password for user.
+ 

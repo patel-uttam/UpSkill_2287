@@ -12,8 +12,7 @@ namespace UpSkillFoundationApi.Models.queryParams
         public string OrganizationLevel { get; set; }
         public string StartVacation { get; set; }
         public string EndVacation { get; set; }
-        public string StartSickleave { get; set; }
-        public string EndSickleave { get; set; }
+
 
         // paging 
         public int PageNumber { get; set; }
@@ -27,10 +26,9 @@ namespace UpSkillFoundationApi.Models.queryParams
             OrganizationLevel = "";
             StartVacation = "";
             EndVacation = "";
-            StartSickleave = "";
-            EndSickleave = "";
+
         }
-        public EmployeeQueryParam(int pagenumber, int itemperpage ,List<string> jobtitle , string organizationlevel , string startvacation , string endvacation , string startsickleave , string endsickleavel)
+        public EmployeeQueryParam(int pagenumber, int itemperpage ,List<string> jobtitle , string organizationlevel , string startvacation , string endvacation)
         {
             PageNumber = pagenumber < 1 ? 1 : pagenumber;
             ItemPerPage = itemperpage < 1 || itemperpage > 100 ? 10 : itemperpage;
@@ -39,8 +37,6 @@ namespace UpSkillFoundationApi.Models.queryParams
             OrganizationLevel = organizationlevel;
             StartVacation = startvacation;
             EndVacation = endvacation;
-            StartSickleave = startsickleave;
-            EndSickleave = endsickleavel;
             
         }
     }

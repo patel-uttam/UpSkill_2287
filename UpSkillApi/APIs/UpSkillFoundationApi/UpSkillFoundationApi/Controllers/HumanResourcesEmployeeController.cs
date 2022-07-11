@@ -28,14 +28,25 @@ namespace UpSkillFoundationApi.Controllers
 
         // GET: api/<HumanResourcesEmployeeController>
         [HttpGet]
-        public async Task<IActionResult> Get([FromQuery] EmployeeQueryParam  queryparam)
+        public async Task<IActionResult> Get([FromBody] EmployeeQueryParam  queryparam)
         {
             try
             {
-                var query = new EmployeeQueryParam(queryparam.PageNumber, queryparam.ItemPerPage, queryparam.JobTitle, queryparam.OrganizationLevel, queryparam.StartVacation, queryparam.EndVacation, queryparam.StartSickleave, queryparam.EndSickleave);
+                var query = new EmployeeQueryParam(queryparam.PageNumber, queryparam.ItemPerPage, queryparam.JobTitle, queryparam.OrganizationLevel, queryparam.StartVacation, queryparam.EndVacation);
                 
-                var filterEmployee = employee.GetFilterEmployees(queryparam.JobTitle,queryparam.OrganizationLevel,queryparam.StartVacation,queryparam.EndVacation,queryparam.StartSickleave,queryparam.EndSickleave);
-
+                var filterEmployee = employee.GetFilterEmployees(queryparam.JobTitle,queryparam.OrganizationLevel,queryparam.StartVacation,queryparam.EndVacation);
+                
+                if(filterEmployee.Count() < ((query.PageNumber-1)*query.ItemPerPage))
+                {
+                    if(filterEmployee.Count() > query.ItemPerPage)
+                    {
+                        query.PageNumber = (int)(filterEmployee.Count() / query.ItemPerPage);
+                    }
+                    else
+                    {
+                        query.PageNumber = 1;
+                    }
+                }
                 var finalEmployee = filterEmployee.Skip((query.PageNumber - 1) * query.ItemPerPage).Take(query.ItemPerPage);
                 
                 var checkfornextpage = filterEmployee.Skip(query.PageNumber * query.ItemPerPage).Take(query.ItemPerPage);
@@ -68,7 +79,7 @@ namespace UpSkillFoundationApi.Controllers
         [Route("filter/{startvacation}/{endvacation}/{startsick}/{endsick}")]
         public IEnumerable<Employee> Get(List<string> jobtitle, string organizationlevel, string startvacation, string endvacation, string startsick, string endsick)
         {
-            var employeeResult = employee.GetFilterEmployees(jobtitle, organizationlevel, startvacation, endvacation, startsick, endsick);
+            var employeeResult = employee.GetFilterEmployees(jobtitle, organizationlevel, startvacation, endvacation);
             return employeeResult.OrderBy(o => o.JobTitle).ThenBy(o => o.VacationHours).ThenBy(o => o.SickLeaveHours);
         }
 

@@ -15,7 +15,7 @@ namespace UpSkillFoundationML1.API.Repository
             var newStudents = new List<Student>()
             {
 
-                new Student {StudentId = 1, StudentName="Gaddu", EducationStream="Arts", Standard=11},
+                new Student {StudentId = 1, StudentName="daddu", EducationStream="Arts", Standard=11},
                 new Student {StudentId=2, StudentName="Kaleen_Bhaiya", EducationStream="Commerce",Standard=11},
                 new Student { StudentId=3, StudentName= "Gaitonde", EducationStream="Commerce",Standard=12},
                 new Student { StudentId=4, StudentName="Guddu", EducationStream="Arts", Standard=11},

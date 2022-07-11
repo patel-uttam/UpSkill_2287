@@ -9,7 +9,7 @@ namespace UpSkillFoundationApi.Repository
     public interface IEmployeeRepository
     {
         public IEnumerable<Employee> GetEmployees();
-        public IEnumerable<Employee> GetFilterEmployees(List<string> jobname , string organization , string vacationHless , string vacationHgreater , string sicknessHless , string sicknessHgreater);
+        public IEnumerable<Employee> GetFilterEmployees(List<string> jobname , string organization , string vacationHless , string vacationHgreater);
         public Employee GetEmployee(int EmployeeId);
         public IEnumerable<string> GetDistinctjobTitle();
         public IEnumerable<short?> GetDistinctOrganizationLevel();

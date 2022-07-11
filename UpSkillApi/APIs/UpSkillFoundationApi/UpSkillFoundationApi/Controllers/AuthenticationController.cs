@@ -31,7 +31,7 @@ namespace UpSkillFoundationApi.Controllers
 
         // Sign-up admin
         [HttpPost]
-        [Route("Employee-Admin")]
+        [Route("Admin")]
         public async Task<IActionResult> AdminRegistration([FromBody] Registration registration)
         {
             var isUserExist = await userManager.FindByNameAsync(registration.UserName);
@@ -81,7 +81,7 @@ namespace UpSkillFoundationApi.Controllers
 
         // Sign-up employee
         [HttpPost]
-        [Route("Employee-Admin")]
+        [Route("Employee")]
         public async Task<IActionResult> EmployeeRegistration([FromBody] Registration registration)
         {
             var isUserExist = await userManager.FindByNameAsync(registration.UserName);

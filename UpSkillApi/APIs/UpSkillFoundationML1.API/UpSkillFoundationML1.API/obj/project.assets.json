@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\uttam.patel\\source\\repos\\UpSkillFoundationML1.API\\UpSkillFoundationML1.API\\UpSkillFoundationML1.API.csproj",
+      "projectUniqueName": "D:\\UpSkill\\UpSkill_2287\\UpSkillApi\\APIs\\UpSkillFoundationML1.API\\UpSkillFoundationML1.API\\UpSkillFoundationML1.API.csproj",
       "projectName": "UpSkillFoundationML1.API",
-      "projectPath": "C:\\Users\\uttam.patel\\source\\repos\\UpSkillFoundationML1.API\\UpSkillFoundationML1.API\\UpSkillFoundationML1.API.csproj",
+      "projectPath": "D:\\UpSkill\\UpSkill_2287\\UpSkillApi\\APIs\\UpSkillFoundationML1.API\\UpSkillFoundationML1.API\\UpSkillFoundationML1.API.csproj",
       "packagesPath": "C:\\Users\\uttam.patel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\uttam.patel\\source\\repos\\UpSkillFoundationML1.API\\UpSkillFoundationML1.API\\obj\\",
+      "outputPath": "D:\\UpSkill\\UpSkill_2287\\UpSkillApi\\APIs\\UpSkillFoundationML1.API\\UpSkillFoundationML1.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
